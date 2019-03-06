@@ -18,7 +18,7 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="nav justify-content-center">
+				<ul class="navbar-nav">
 					<li class="navbar-item">
 						<a class="nav-link" href="#"> Мои заявки
 						</a>
@@ -36,10 +36,9 @@
 						</a>
 					</li>
 				</ul>
-
-				<div class="col-md-2">
-					<p>панель управления</p>
-				</div>
+			</div>
+			<div class="d-inline-block">
+				<button class="btn"><i class="fas fa-sign-out-alt fa-2x"></i></button>
 			</div>
 		</nav>
 	</header>
@@ -48,18 +47,15 @@
 		<div class="row m-0">
 			<div class="container box col-sm-8 p-2">
 				<div class="row">
-					<div class="col-2">
+					<div class="col">
 						<button type="button" class="btn btn-dark">
 							<i class="fas fa-plus"></i>
 						</button>
-					</div>
-					<div class="col-2">
-						<button type="button" class="btn btn-dark">
+						<button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 							<i class="fas fa-filter"></i>
 						</button>
-					</div>
-					<div class="col-4">
-					<button class="btn scan btn-dark" data-toggle="modal" data-target="#exampleModal">Сканирование</button>
+
+						<button class="btn scan btn-dark" data-toggle="modal" data-target="#exampleModal">Сканирование</button>
 	
 						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 							<div class="modal-dialog modal-lg" role="document">
@@ -76,7 +72,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+
+					<div class="col">
 						<span class="input-icon">
 							<button type="button" class="btn btn-dark">
 								<i class="fas fa-search float-right">
@@ -84,6 +81,13 @@
 								</i>
 							</button>
 						</span>	
+					</div>
+
+					<div class="collapse" id="collapseExample">
+					  <div class="card card-body">
+					    <p>По номеру</p>
+						<input type="text" class="form-control" id="Info" placeholder="Страницы">
+					  </div>
 					</div>
 				</div>
 			</div>
