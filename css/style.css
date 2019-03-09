@@ -72,6 +72,10 @@ main button .fas {
   color: white;
 }
 
+.text {
+  max-width: 100%;
+}
+
 .scan, .add  {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -81,21 +85,15 @@ main button .fas {
 
 
 /* Лупа */
-.fa-search {
-  font-size: 25px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+#collapseSearch input{
+  width: 50%;
 }
 
-.input-icon input {
-  width: 90%;
-  margin-top: 10px;
-}
 /**************/
 
 main>div>.over{
   overflow-x: auto;
-  overflow-y: hidden;
+  overflow-y: none;
 }
 
 footer {
