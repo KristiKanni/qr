@@ -17,7 +17,7 @@ li {
   font-size: 20px;
 }
 
-.container {
+.container, .card {
   margin-top: 25px; 
 }
 
@@ -72,10 +72,6 @@ main button .fas {
   color: white;
 }
 
-.text {
-  max-width: 100%;
-}
-
 .scan, .add  {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -91,10 +87,7 @@ main button .fas {
 
 /**************/
 
-main>div>.over{
-  overflow-x: auto;
-  overflow-y: none;
-}
+
 
 footer {
   background-image: url(prism.png);
